@@ -1,0 +1,18 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <% include ../partials/header %>
+
+  <title>Film 🎥</title>
+
+  <% Object.keys(summers).forEach(function (id) { %>
+    <film>
+      <h2><%= summers[id].title %></h2>
+      <img src=<%= summers[id].img %>>
+      <p><a href=<%= summers[id].link %> target="_blank"><%= summers[id].title %> IMDB Page</a></p>
+      <p>Release Date: <%= summers[id].release %></p>
+    </film>
+  <% }) %>
+
+    <% include ../partials/footer %>
+</html>
