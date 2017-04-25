@@ -1,0 +1,15 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <% include ../partials/header %>
+
+  <title>Film 🎥</title>
+    <film>
+      <h2><%= pageinfo.film %></h2>
+      <img src=<%= pageinfo.img %>>
+      <p><a href=<%= pageinfo.imdb %> target="_blank"><%= pageinfo.film %> IMDB Page</a></p>
+      <p>Release Date: <%= pageinfo.release %></p>
+    </film>
+
+    <% include ../partials/footer %>
+</html>
